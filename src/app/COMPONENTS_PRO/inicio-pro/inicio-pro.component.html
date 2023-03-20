@@ -1,0 +1,27 @@
+<section class="banner-ext">
+    
+    <div class="content">
+     <h2>Proyectos</h2>
+     <p></p>
+    
+     <a class="btn btn-secondary btn-sm" [routerLink]="['/agregarPro/']" routerLinkActive="router-link">agregar</a>
+  
+    </div>
+        
+  </section>
+  
+  
+  <div class="educacionEdu" *ngFor="let proyecto of lista">
+      <div>
+        <img src="{{proyecto.foto_url}}" alt="foto" >
+        <h3>{{proyecto.nombre_proyecto}}</h3>
+        <p>{{proyecto.descripcion}}</p>
+        
+        
+        <button class="btn btn-warning btn-sm" [routerLink]="['/editarPro/', proyecto.id]" routerLinkActive="router-link">editar</button>
+        <button class="btn btn-danger btn-sm" (click)="eliminar(proyecto.id)">eliminar</button>
+      </div>
+  
+      
+    </div>
+  

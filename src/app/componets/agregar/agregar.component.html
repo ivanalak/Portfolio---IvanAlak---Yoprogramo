@@ -1,0 +1,40 @@
+<div class="container">
+<form action="">
+  <label for="persona">Nombre </label>
+  <input type="text" id="persona" name="persona" [(ngModel)]= "personaNueva.nombre">
+
+  <hr>
+  <label for="persona">Apellido </label>
+  <input type="text" id="persona" name="persona" [(ngModel)]= "personaNueva.apellido">
+
+  <hr>
+  <label for="persona">Mail </label>
+  <input type="text" id="persona" name="persona" [(ngModel)]= "personaNueva.mail">
+
+  <hr>
+  <label for="estado">Estado </label>
+  <input type="checkbox" id="estado" name="estado" [(ngModel)]= "personaNueva.finalizado"> 
+
+  <hr>
+  <label for="persona">Titulo </label>
+  <input type="text" id="persona" name="persona" [(ngModel)]= "personaNueva.titulo">
+
+  <hr>
+  <label for="persona">Sobre mi </label>
+  <input type="text" id="persona" name="persona" [(ngModel)]= "personaNueva.sobre_mi">
+
+  <hr>
+  <label for="persona">foto </label>
+  <input type="text" id="persona" name="persona" [(ngModel)]= "personaNueva.foto_url">
+
+  <hr>
+  <button class="btn btn-primary" (click)="agregarPersona()">Guardar</button>
+
+  
+
+
+
+</form>
+
+
+</div>

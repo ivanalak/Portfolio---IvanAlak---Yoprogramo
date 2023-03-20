@@ -1,0 +1,18 @@
+<div class="container">
+  
+    <label for="persona">Tipo de Educacion </label>
+    <input type="text" id="herramienta" name="herramienta" [(ngModel)]="herramientaActual.tipo_de_herramienta">
+    <hr>
+    <label for="persona">Descripcion </label>
+    <input type="text" id="herramienta" name="herramienta" [(ngModel)]="herramientaActual.descripcion">
+    <hr>
+    <label for="persona">Foto </label>
+    <input type="text" id="herramienta" name="herramienta" [(ngModel)]="herramientaActual.foto_url">
+    <hr>
+    
+
+    <hr>
+    <button class="btn btn-primary" (click)="guardar()" [routerLink] = "'/admin'">Guardar</button>
+
+
+</div>

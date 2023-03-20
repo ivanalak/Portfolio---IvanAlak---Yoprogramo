@@ -1,0 +1,56 @@
+<div class="container">
+    <nav class="nav-main">
+      <a href="https://argentinaprograma.inti.gob.ar/"><img src="./assets/ap.png" alt="logo" class="nav-brand" > </a>
+    
+      
+          <ul class="nav-menu">
+       <li>
+        <a [routerLink] = "''">
+          <i class="">Inicio</i> 
+
+    </a>
+        
+       </li>
+       
+    </ul>
+    
+        
+
+<ul class="nav-menu-right">
+    <li>
+        <a *ngIf="!login.isLoggedIn()"
+        [routerLink]="'/login'">
+          <i class="">Login</i> 
+
+    </a>
+    </li>
+
+    <li>
+        <a *ngIf="!login.isLoggedIn()"
+        [routerLink]="'/signup'">
+          <i class="">Registrate aquí</i> 
+
+    </a>
+    </li>
+    
+    <li>
+        <a *ngIf="login.isLoggedIn()" (click)="logout()" [routerLink] = "''" >
+          <i class="">Cerrar Sesion</i> 
+
+    </a>
+    </li>
+
+
+    <li>
+        <a *ngIf="login.isLoggedIn()">
+          <i class="">{{login.getUser().username}}</i> 
+
+    </a>
+    </li>
+
+</ul>
+
+
+
+    </nav>
+</div>

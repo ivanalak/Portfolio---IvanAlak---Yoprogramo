@@ -1,0 +1,32 @@
+<div class="container">
+  
+    <label for="persona">Nombre </label>
+    <input type="text" id="persona" name="persona" [(ngModel)]="personaActual.nombre">
+    <hr>
+    <label for="persona">Apellido </label>
+    <input type="text" id="persona" name="persona" [(ngModel)]="personaActual.apellido">
+    <hr>
+    <label for="persona">Mail </label>
+    <input type="text" id="persona" name="persona" [(ngModel)]="personaActual.mail">
+    <hr>
+    <label for="persona">Titulo </label>
+    <input type="text" id="persona" name="persona" [(ngModel)]="personaActual.titulo">
+    <hr>
+    <label for="persona"> Sobre mi </label>
+    <input type="text" id="persona" name="persona" [(ngModel)]="personaActual.sobre_mi">
+    <hr>
+    <label for="persona">Foto perfil </label>
+    <input type="text" id="persona" name="persona" [(ngModel)]="personaActual.foto_url">
+    <hr>
+
+
+    <label for="estado">Estado</label>
+    <input type="checkbox" id="estado" name="estado" [(ngModel)]="personaActual.finalizado"> 
+
+
+
+    <hr>
+    <button class="btn btn-primary" (click)="guardar()">Guardar</button>
+
+
+</div>

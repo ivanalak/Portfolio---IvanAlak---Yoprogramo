@@ -1,0 +1,22 @@
+<section class="banner-ext">
+    
+    <div class="content">
+     <h2>Experiencia Laboral</h2>
+     <p></p>
+    
+    </div>
+        
+</section>
+
+<div class="educacion" *ngFor="let experiencia of lista">
+    <div>
+      <img src="{{experiencia.foto_url}}" alt="foto" >
+      <h3>{{experiencia.tipo_de_trabajo}}</h3>
+      <p>{{experiencia.descripcion}}</p>
+      
+    
+    </div>
+
+    
+  </div>
+

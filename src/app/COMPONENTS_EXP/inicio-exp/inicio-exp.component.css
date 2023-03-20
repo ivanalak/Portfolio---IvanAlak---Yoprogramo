@@ -1,0 +1,43 @@
+.content a {
+
+    display: flex;
+    width: 70px;
+    
+}
+
+.educacionEdu {
+  
+    display: grid;
+    grid-template-columns: repeat(auto, 1fr);
+    gap: 25px;
+    margin: 10px 0;
+    padding: auto;
+
+}
+
+.educacionEdu img {
+      width: auto;
+      height: 80px;
+      
+}
+
+.educacionEdu h3 {
+         font-size: 20px;
+         margin: 20px 10px;
+         
+
+}
+
+.educacionEdu a {
+    padding: 5px 0;
+    color: white;
+    text-transform: inline-block;
+    display: inline-block;
+    font-weight: bold;
+    
+ 
+}
+
+.educacionEdu a button :hover{
+          text-decoration: underline;
+}

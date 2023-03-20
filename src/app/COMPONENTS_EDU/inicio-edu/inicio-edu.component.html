@@ -1,0 +1,27 @@
+
+<section class="banner-ext">
+    
+  <div class="content">
+   <h2>Educacion</h2>
+   <p></p>
+  
+   <a class="btn btn-secondary btn-sm" [routerLink]="['/agregarEdu/']" routerLinkActive="router-link">agregar</a>
+
+  </div>
+      
+</section>
+
+
+<div class="educacion" *ngFor="let educacion of lista">
+    <div>
+      <img src="{{educacion.foto_url}}" alt="foto" >
+      <h3>{{educacion.tipo_de_educacion}}</h3>
+      <p>{{educacion.descripcion}}</p>
+      
+      
+      <button class="btn btn-warning btn-sm" [routerLink]="['/editarEdu/', educacion.id]" routerLinkActive="router-link">editar</button>
+      <button class="btn btn-danger btn-sm" (click)="eliminar(educacion.id)">eliminar</button>
+    </div>
+
+    
+  </div>

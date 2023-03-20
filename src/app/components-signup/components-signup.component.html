@@ -1,0 +1,65 @@
+<div class = "bootstrap-wrapper">
+  <div class="container">
+      <div class="row" style="margin-top: 20px;">
+
+        <div class="col-md-6 offset-md-3">
+            <div class="container text-center">
+              <img src="../../../assets/add-friend.png" width="50" height="50"></div>
+
+               <h3 class="text-center">Registrate aqui</h3>
+               <div class="container">
+                <div class="row">
+                   <div class="col-md-6 col-md-offset-3">
+                       <div th:if=${param.exito}>
+                           
+                           
+                           
+
+                            <div class="form-group">
+                              <label class="form-label" for="username">Nombre Usuario :</label>
+                              <input id="nombreUsuario" type= "text" class="form-control" name="signup" [(ngModel)]= "user.username" required autofocus="autofocus">
+                            </div>
+                             <div class="form-group">
+                               <label class="form-label" for="nombre">Nombre :</label>
+                               <input id="nombre" type= "text" class="form-control" [(ngModel)]= "user.nombre" required autofocus="autofocus">
+                             </div>
+               
+                             <div class="form-group">
+                               <label class="form-label" for="apellido">Apellido :</label>
+                               <input id="apellido" type= "text" class="form-control" [(ngModel)]= "user.apellido" required autofocus="autofocus">
+                             </div>
+               
+                             <div class="form-group">
+                               <label class="form-label" for="email">Mail :</label>
+                               <input id="email" type = "email" class="form-control" [(ngModel)]= "user.email" required autofocus="autofocus">
+                             </div>
+               
+                             <div class="form-group">
+                               <label class="form-label" for="password">Password :</label>
+                               <input type = "password" id="password" class="form-control" [(ngModel)]= "user.password" required autofocus="autofocus">
+                             </div>
+               
+                             <div class="form-group" style="text-align: center;">
+                               <button type= "submint" class="btn btn-success"(click)="formSubmint()">Registrar </button>
+                               
+                               
+                             </div>
+               
+                           
+                          
+                   </div>
+                </div>
+               
+               </div>
+               
+                
+                 
+                    
+                
+               
+            </div>
+
+        </div>
+    </div>
+  </div>
+

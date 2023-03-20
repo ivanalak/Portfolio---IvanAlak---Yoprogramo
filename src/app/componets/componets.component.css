@@ -1,0 +1,9 @@
+.educacionEdu {
+    
+    display: grid;
+    grid-template-columns: repeat(auto, 1fr);
+    gap: 25px;
+    margin: 10px 0;
+    padding: auto;
+
+}

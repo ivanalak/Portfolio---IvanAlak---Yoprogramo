@@ -1,0 +1,23 @@
+<section class="banner-ext">
+    
+    <div class="content">
+     <h2>Herramientas Tecnologicas</h2>
+     <p></p>
+  
+    </div>
+        
+  </section>
+  
+   
+  <div class="educacion" *ngFor="let herramienta of lista">
+      <div class = "ed">
+        <img src="{{herramienta.foto_url}}" alt="foto">
+        <h3>{{herramienta.tipo_de_herramienta}}</h3>
+        <p>Dominio: {{herramienta.descripcion}}</p>
+        
+        
+      </div>
+  
+    </div>
+    
+  

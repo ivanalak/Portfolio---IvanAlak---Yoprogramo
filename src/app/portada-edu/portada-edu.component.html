@@ -1,0 +1,22 @@
+<section class="banner-ext">
+    
+    <div class="content">
+     <h2>Educacion</h2>
+     <p></p>
+  
+    </div>
+        
+  </section>
+  
+  
+  <div class="educacion" *ngFor="let educacion of lista" >
+      <div>
+        <img src="{{educacion.foto_url}}" alt="foto" >
+        <h3>{{educacion.tipo_de_educacion}}</h3>
+        <p>{{educacion.descripcion}}</p>
+        
+      </div>
+  
+      
+    </div>
+  

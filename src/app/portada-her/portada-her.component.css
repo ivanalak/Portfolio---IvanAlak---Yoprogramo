@@ -1,0 +1,23 @@
+.educacion .ed {
+
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-auto-rows: 80px;
+    padding: auto;
+    
+}
+
+.educacion img {
+      width: auto;
+      height: 50px;
+      
+}
+
+.educacion h3 {
+         font-size: 20px;
+         margin: 20px 10px;
+ 
+}
+
+
+

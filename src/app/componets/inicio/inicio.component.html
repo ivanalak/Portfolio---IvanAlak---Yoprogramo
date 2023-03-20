@@ -1,0 +1,14 @@
+
+<div class="portada" *ngFor="let persona of lista">
+       
+  <img class="avatar" src="./assets/ivan.jpg"  alt="Ivan">
+
+   <h1>{{persona.nombre}} {{persona.apellido}}</h1>
+   <h2>{{persona.titulo}}</h2>
+   <p>{{persona.sobre_mi}}</p> 
+   
+   <button class="fa fa-pen" [routerLink]="['/editar/', persona.id]" routerLinkActive="router-link"></button>
+
+  
+
+</div>
