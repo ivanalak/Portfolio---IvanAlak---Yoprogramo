@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class HerramientasService {
 
-  url='http://localhost:8090/api/herramientas'
+  url='https://portfolio-backend-ivanalak.onrender.com/api/herramientas'
   constructor(private http: HttpClient) { }
 
 

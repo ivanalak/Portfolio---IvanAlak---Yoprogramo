@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class UserService {
 
-  url='http://localhost:8090/user/'
+  url='https://portfolio-backend-ivanalak.onrender.com'
   constructor(private http:HttpClient) { }
 
   public añadirUsuario(user:any) {

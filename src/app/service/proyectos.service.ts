@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ProyectosService {
 
-  url='http://localhost:8090/api/proyectos'
+  url='https://portfolio-backend-ivanalak.onrender.com/api/proyectos'
   constructor(private http: HttpClient) {}
 
   getProyecto(): Observable<any> {

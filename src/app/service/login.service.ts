@@ -10,7 +10,7 @@ import { Subject } from 'rxjs/internal/Subject';
 })
 export class LoginService {
 
-  url='http://localhost:8090'
+  url='https://portfolio-backend-ivanalak.onrender.com'
   
   public loginStatusSubjec = new Subject <boolean>();
 
